@@ -18,9 +18,9 @@ namespace DaveO.AdventOfCode.Day1
         //properties
 
         //methods
-        public static List<GroupedMeasurements> GroupMeasurements(int number1, int number2, int number3)
-        {
-            return;
-        }
+        //public static List<GroupedMeasurements> GroupMeasurements(int number1, int number2, int number3)
+        //{
+          //  return;
+        //}
     }
 }

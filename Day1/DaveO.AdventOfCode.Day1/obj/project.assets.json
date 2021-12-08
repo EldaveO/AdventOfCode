@@ -8,28 +8,20 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\david\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\davido\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\david\\Documents\\_Programming\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
+      "projectUniqueName": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
       "projectName": "DaveO.AdventOfCode.Day1",
-      "projectPath": "C:\\Users\\david\\Documents\\_Programming\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
-      "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\david\\Documents\\_Programming\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\obj\\",
+      "projectPath": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
+      "packagesPath": "C:\\Users\\davido\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\davido\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -68,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

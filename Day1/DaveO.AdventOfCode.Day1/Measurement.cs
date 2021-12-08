@@ -10,7 +10,7 @@ namespace DaveO.AdventOfCode.Day1
     {
         //fields
         private int _value;
-        private const string _path = @"C:\Users\david\Documents\_Programming\AdventOfCode\Day1\DaveO.AdventOfCode.Day1\Data.csv";
+        private const string _path = @"C:\Users\davido\Documents\GitHub\AdventOfCode\Day1\DaveO.AdventOfCode.Day1\Data.csv";
 
         //constructors
         public Measurement() { }
