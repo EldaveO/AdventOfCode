@@ -34,6 +34,7 @@ How many measurements are larger than the previous measurement?
 */
 
 using System;
+using System.Collections.Generic;
 
 namespace DaveO.AdventOfCode.Day1
 {
@@ -41,7 +42,60 @@ namespace DaveO.AdventOfCode.Day1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            var records = Measurement.GetMeasurements();
+            int n = 0;
+            int c = 0;
+
+            /*foreach (var measurement in records)
+            {
+                if (n == 0)
+                {
+                    Console.WriteLine("{0} (first value)", measurement.Value);
+                    n = n + 1;
+                }
+                else
+                {
+                    if (Convert.ToInt32(records[n].Value) > Convert.ToInt32(records[n - 1].Value))
+                    {
+                        Console.WriteLine("{0} (Increased)", measurement.Value);
+                        n = n + 1;
+                        c = c + 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} (Decreased)", measurement.Value);
+                        n = n + 1;
+                    }
+                }
+            }
+            Console.WriteLine("Thus there are {0} measurements that are larger than the previous measurement", c);*/
+            foreach (var measurement in records)
+            {
+                if (n == 0)
+                {
+                    Console.WriteLine("{0} (first value)", measurement.Value);
+                    n = n + 1;
+                }
+                else
+                {
+                    if (Convert.ToInt32(records[n].Value) > Convert.ToInt32(records[n - 1].Value))
+                    {
+                        Console.WriteLine("{0} (Increased)", measurement.Value);
+                        n = n + 1;
+                        c = c + 1;
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} (Decreased)", measurement.Value);
+                        n = n + 1;
+                    }
+                }
+            }
+            Console.WriteLine("Thus there are {0} measurements that are larger than the previous measurement", c);
+
+
+            Console.ReadLine();
         }
     }
 }
