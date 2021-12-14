@@ -10,7 +10,7 @@ namespace DaveO.AdventOfCode.Day1
     {
         //fields
         private int _value;
-        private const string _path = @"C:\Users\davido\Documents\GitHub\AdventOfCode\Day1\DaveO.AdventOfCode.Day1\Data.csv";
+        private const string _path = @"C:\Users\davido\Documents\DaveCode\AdventOfCode\Day1\DaveO.AdventOfCode.Day1\Data.csv";
 
         //constructors
         public Measurement() { }
@@ -42,6 +42,28 @@ namespace DaveO.AdventOfCode.Day1
                 measurements.Add(measure);
             }
             return measurements;
+        }
+
+        public static List<Measurement> GroupMeasurements(List<Measurement> measurements)
+        {
+            List<Measurement> records = measurements;
+            Measurement group = null;
+            List<Measurement> groupMeasurements = new List<Measurement>();
+
+            int total = records.Count();
+            Console.WriteLine(total);
+            Console.ReadLine();
+
+            for (int i = 0; i <= (total-3); i++)
+            {
+                var hold = records[i].Value + records[i + 1].Value + records[i + 2].Value;
+                Console.WriteLine(i + ": " + records[i].Value + " + " + records[i + 1].Value + " + " + records[i + 2].Value + " = " + hold);
+                group = new Measurement(hold);
+                groupMeasurements.Add(group);
+            }
+
+            Console.ReadLine();
+            return groupMeasurements;
         }
     }
 }

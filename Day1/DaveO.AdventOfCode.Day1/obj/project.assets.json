@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
+      "projectUniqueName": "C:\\Users\\davido\\Documents\\DaveCode\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
       "projectName": "DaveO.AdventOfCode.Day1",
-      "projectPath": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
+      "projectPath": "C:\\Users\\davido\\Documents\\DaveCode\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
       "packagesPath": "C:\\Users\\davido\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\obj\\",
+      "outputPath": "C:\\Users\\davido\\Documents\\DaveCode\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\davido\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

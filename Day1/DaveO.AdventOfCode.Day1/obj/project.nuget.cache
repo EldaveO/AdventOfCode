@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jzeCnU7cvViHcToYrAdxIXDrdXmWzyd3nMj1kBoVm+cMfDqboSeAmZK4UW/ziRdNRgKFWhnx5Fa4qwwhkQTJqw==",
+  "dgSpecHash": "I6oZo6blCtyTPbxxCgcB39HgqmF9cnlY5IwNBuHkoKJi0CMIoJajWOkn56DCWyA+JjWD/Rjnt0AQLrzxwnV06g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\davido\\Documents\\GitHub\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
+  "projectFilePath": "C:\\Users\\davido\\Documents\\DaveCode\\AdventOfCode\\Day1\\DaveO.AdventOfCode.Day1\\DaveO.AdventOfCode.Day1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

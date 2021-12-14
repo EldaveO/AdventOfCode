@@ -44,10 +44,12 @@ namespace DaveO.AdventOfCode.Day1
         {
             
             var records = Measurement.GetMeasurements();
+            var groupedRecords = Measurement.GroupMeasurements(records);
+
             int n = 0;
             int c = 0;
 
-            foreach (var measurement in records)
+            foreach (var measurement in groupedRecords)
             {
                 if (n == 0)
                 {
@@ -56,7 +58,7 @@ namespace DaveO.AdventOfCode.Day1
                 }
                 else
                 {
-                    if (Convert.ToInt32(records[n].Value) > Convert.ToInt32(records[n - 1].Value))
+                    if (Convert.ToInt64(groupedRecords[n].Value) > Convert.ToInt64(groupedRecords[n - 1].Value))
                     {
                         Console.WriteLine("{0} (Increased)", measurement.Value);
                         n = n + 1;
@@ -69,7 +71,7 @@ namespace DaveO.AdventOfCode.Day1
                     }
                 }
             }
-            Console.WriteLine("Thus there are {0} measurements that are larger than the previous measurement", c);
+            Console.WriteLine("Thus there are {0} grouped measurements that are larger than the previous measurement", c);
             Console.ReadLine();
         }
     }
