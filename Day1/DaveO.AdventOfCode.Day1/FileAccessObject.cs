@@ -43,20 +43,6 @@ namespace DaveO.AdventOfCode.Day1
 
             return contents;
         }
-
-        public static void SaveAllRecords(string path, string[] records)
-        {
-            string[] contents = null;
-            try
-            {
-                //if file exists, it will be overwritten
-                File.WriteAllLines(path, records);
-            }
-            catch (Exception ex)
-            {
-                //log error;
-            }
-        }
     }
 }
 
