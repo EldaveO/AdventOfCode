@@ -12,6 +12,7 @@ namespace AdventOfCode.Day2
 
             int forward = 0;
             int depth = 0;
+            int aim = 0;
 
             foreach (var position in records)
             {
@@ -21,12 +22,13 @@ namespace AdventOfCode.Day2
                 {
                     case "forward":
                         forward = position.value + forward;
+                        depth = depth + (position.value * aim);
                         break;
                     case "up":
-                        depth = depth - position.value;
+                        aim = aim - position.value;
                         break;
                     case "down":
-                        depth = depth + position.value;
+                        aim = aim + position.value;
                         break;
                 }
             }
