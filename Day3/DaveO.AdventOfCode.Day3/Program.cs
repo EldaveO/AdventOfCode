@@ -29,7 +29,7 @@ namespace DaveO.AdventOfCode.Day3
                 }
 
                 //Console.WriteLine("ONES:{0}, ZEROS:{1}", countOnes, countZeros);
-                o2Records = BitCriteria.KickOut(o2Records, countOnes, countZeros, "o2", i);
+                o2Records = BitCriteria.O2KickOut(o2Records, countOnes, countZeros, "o2", i);
                 
                 foreach (var rate in o2Records)
                 {
@@ -61,7 +61,7 @@ namespace DaveO.AdventOfCode.Day3
                 }
 
                 //Console.WriteLine("ONES:{0}, ZEROS:{1}", countOnes, countZeros);
-                co2Records = BitCriteria.KickOut(co2Records, countOnes, countZeros, "co2", i);
+                co2Records = BitCriteria.CO2KickOut(co2Records, countOnes, countZeros, "co2", i);
 
                 foreach (var rate in co2Records)
                 {
