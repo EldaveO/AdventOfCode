@@ -17,7 +17,7 @@ namespace DaveO.AdventOfCode.Day3
                 Console.WriteLine(" Checking position {0}", i+1);
                 Console.ReadLine();
 
-                foreach (var rate in o2Records) // need to for loop in reverse based on list.count
+                foreach (var rate in o2Records)
                 {
                     if (Rate.IsOne(rate.values[i]))
                     {
@@ -29,16 +29,17 @@ namespace DaveO.AdventOfCode.Day3
                     }
                 }
 
-                Console.WriteLine("ONES:{0}, ZEROS:{1}", countOnes, countZeros);
+                //Console.WriteLine("ONES:{0}, ZEROS:{1}", countOnes, countZeros);
                 o2Records = BitCriteria.KickOut(o2Records, countOnes, countZeros, "o2", i);
                 
                 foreach (var rate in o2Records)
                 {
-                    Console.WriteLine(" {0} o2 records left", o2Records.Count);
-                    //for (int c = 0; c < 12; c++)
+                    //Console.WriteLine(" {0} o2 records left", o2Records.Count);
+                    for (int c = 0; c < 12; c++)
                     {
-                    //    Console.Write(rate.values[c]);
+                        Console.Write(rate.values[c]);
                     }
+                    Console.WriteLine();
                 }
             }
             Console.WriteLine();

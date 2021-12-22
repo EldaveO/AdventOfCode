@@ -32,6 +32,7 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (rate.values[position] == 0)
                     {
+                        Console.WriteLine(rate.values[position]);
                         tempRates.RemoveAt(i); 
                     }
                 }
@@ -46,6 +47,7 @@ namespace DaveO.AdventOfCode.Day3
 
                     if (rate.values[position] == 1)
                     {
+                        Console.WriteLine(rate.values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
