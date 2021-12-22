@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DaveO.AdventOfCode.Day3
 {
-    class Rate
+    public class Rate
     {
         //fields
         const string path = @"C:\Users\davido\Documents\DaveCode\AdventOfCode\Day3\Data.csv";

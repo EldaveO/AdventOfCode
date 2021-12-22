@@ -22,57 +22,56 @@ namespace DaveO.AdventOfCode.Day3
         // if only one value left in collection then print
         public static List<Rate> KickOut(List<Rate> rates, int ones, int zeros, string type, int position)
         {
-            List<Rate> tempRates = new List<Rate>(rates);
+            var tempRates = new List<Rate>(rates);
 
-            int i = 0;
 
             if (ones > zeros) //kick out zeros
             {
-                foreach (var rate in rates)
+                Console.WriteLine("removing all zeros! index {0}");
+                for (int i = tempRates.Count-1; i >= 0 ; i--)
                 {
-                    if (rate.values[position] == 0)
+                    if (tempRates[i].values[position] == 0)
                     {
-                        Console.WriteLine(rate.values[position]);
+                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i); 
                     }
                 }
-                i = i + 1;
                 return tempRates;
             }
             else if (ones < zeros) //kick out ones
             {
-                Console.WriteLine("removing all ones! index {0}", i);
-                foreach (var rate in rates)
+                Console.WriteLine("removing all ones! index {0}");
+                for (int i = tempRates.Count-1; i >= 0; i--)
                 {
-
-                    if (rate.values[position] == 1)
+                    if (tempRates[i].values[position] == 1)
                     {
-                        Console.WriteLine(rate.values[position]);
+                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
-                i = i + 1;
                 return tempRates;
             }
             else if (ones == zeros && type == "o2") //kick out all zeros because o2
             {
                 Console.WriteLine("Theyre equal removing all zeros! Postion {0}", position+1);
-                foreach (var rate in rates)
+                for (int i = tempRates.Count-1; i >= 0; i--)
                 {
-                    if (rate.values[position] == 0)
+                    if (tempRates[i].values[position] == 0)
                     {
+                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
-                i = i + 1;
                 return tempRates;
             }
             else //kick out all ones because CO2 Scribber
             {
-                foreach (var rate in rates)
+                Console.WriteLine("Theyre equal removing all ones! Postion {0}", position + 1);
+                for (int i = tempRates.Count - 1; i >= 0; i--)
                 {
-                    if (rate.values[position] == 1)
+                    if (tempRates[i].values[position] == 1)
                     {
+                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
