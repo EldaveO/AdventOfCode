@@ -32,7 +32,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 0)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i); 
                     }
                 }
@@ -45,7 +44,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 1)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
@@ -58,7 +56,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 0)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
@@ -71,7 +68,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 1)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
@@ -91,7 +87,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 0)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
@@ -104,7 +99,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 1)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
@@ -117,7 +111,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 0)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
@@ -130,7 +123,6 @@ namespace DaveO.AdventOfCode.Day3
                 {
                     if (tempRates[i].values[position] == 1)
                     {
-                        Console.WriteLine(tempRates[i].values[position]);
                         tempRates.RemoveAt(i);
                     }
                 }
