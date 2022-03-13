@@ -9,7 +9,8 @@ namespace DaveO.AdventOfCode.Day3
     public class Rate
     {
         //fields
-        const string path = @"C:\Users\davido\Documents\DaveCode\AdventOfCode\Day3\Data.csv";
+        //const string path = @"C:\Users\davido\Documents\DaveCode\AdventOfCode\Day3\Data.csv";
+        const string path = @"C:\Users\david\Documents\_Programming\AdventOfCode\Day3\Data.csv";
 
         public int[] values;
 
