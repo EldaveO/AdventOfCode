@@ -15,6 +15,12 @@ def part1(data):
         else:
             currentRow = list(data[y])    
             # Movement check
+            #Shmebulock — Today at 6:04 PM
+            #x = (x + 1) % len(date[0])` 
+            #Lally Monkey — Today at 6:09 PM
+            #x += 3
+            #if x >= len(data[0]):
+                #x = x - len(data[0])
             if (x + 3) >= len(data[0]):
                 x = (x + 3) - (len(data[0]))
                 #print(x)
