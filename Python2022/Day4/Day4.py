@@ -1,7 +1,6 @@
 # input file
-#data = open("Day4\Sample.txt").readlines()
-data = open("Day4\Data.txt").readlines()
-#data = open("Day3\Sample2.txt").readlines()
+data = open("Day4\Sample.txt").readlines()
+#data = open("Day4\Data.txt").readlines()
 data = [line.strip() for line in data]
 #print(data)
 
