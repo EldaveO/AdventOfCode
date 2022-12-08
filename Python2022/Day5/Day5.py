@@ -9,8 +9,7 @@ def moveListFix(moveList):
     moveList = [line.replace("move ", "") for line in moveList]
     moveList = [line.replace(" from ", ",") for line in moveList]
     moveList = [line.replace(" to ", ",") for line in moveList]
-    moveList = [line.split(",") for line in moveList]
-    print(moveList) 
+    moveList = [line.split(",") for line in moveList] 
     return moveList
 
 def cargoStacksFix(cargoStacks):
@@ -21,9 +20,18 @@ def cargoStacksFix(cargoStacks):
 def part1(cargoStacks, moveList):
     i = int(0)
     for move in moveList:
-        amountMove = moveList[i][0]
-        startMove = moveList[i][1]
-        endMove = moveList[i][2]
+        amountMove = int(moveList[i][0])
+        startMove = int(moveList[i][1])+1
+        endMove = int(moveList[i][2])-1
+
+        j = int(0)
+        while j <= 1: #int(amountMove):
+            cargoCrate = cargoStacks[startMove][-1]
+            cargoStacks[startMove].pop([startMove][-1])
+            cargoStacks[endMove].append(cargoCrate)
+            print(cargoCrate)
+            print(cargoStacks)
+            j =+ 1
         i += 1
 
     return None
