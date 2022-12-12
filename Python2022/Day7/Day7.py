@@ -3,7 +3,7 @@ data = open("Day7\Sample.txt").readlines()
 #data = open("Day7\Data.txt").readlines()
 data = [line.strip() for line in data]
 
-def commandCheck(line, lineNumber):
+def commandCheck(line):
     commandCharater = "$"
     commandGoMain = "cd /"
     commandGoBack = "cd .."
@@ -11,65 +11,60 @@ def commandCheck(line, lineNumber):
     commandListAll = "ls"
     if any(c in commandCharater for c in line):
         if commandGoMain in line:
-            return "goMain", lineNumber
+            return "goMain"
         elif commandGoBack in line:
-            return "goBack", lineNumber
+            return "goBack"
         elif commandGoInto in line:
-            return "goInto", lineNumber
+            return "goInto" 
         elif commandListAll in line:
-            return "listAll", lineNumber
+            return "listAll"
         else:
-            return "commandNotFound", lineNumber
+            return "commandNotFound"
     else: 
-        return "file", lineNumber
-
-def goMain():
-    pass
-
-def goBack(currentDirectory, newDirectory):
-    return newDirectory
-
-def goInto(lineNumber, line):
-    return None
-
-def listAll(data, directory, lineNumberStart, LineNumberEnd):
-    lines = []
-    for i, line in enumerate(data):
-        if i in lineNumber:
-            lines.Append(line.strip()) 
-    return lines
+        return "file"
 
 def part1(data):
-    i = int(0)
-    currentDirectory = "/"
-    previousDirectories = []
-    lines = []
+    currentDirectory = []
+    directoryList = {} #2D dict dir name and total sizes
+    totalSum = int(0)
+    locationName = ""
 
     for line in data:
-        i += 1
-        currentCommand, lineNumber = commandCheck(line, i)
-        
+        currentCommand = commandCheck(line)        
         if currentCommand == "goMain":
-            previousDirectories.clear()
-            previousDirectories.append("/")
-            currentDirectory = "/"
+            currentDirectory.clear()
+            currentDirectory.append("/")
         elif currentCommand == "goBack":
-            return goBack()
+            currentDirectory.pop()
         elif currentCommand == "goInto":
-            previousDirectories.append()
-            return goInto()
+            dollar, cd, folder = line.split(" ")
+            currentDirectory.append(folder)
+            #print(currentDirectory)
         elif currentCommand == "listAll":
-            lines.clear()
-            for line in data:
-                commandCheck(line)
-            for line in data: 
-            return listAll()
-
-
-    return data
+            #dont care
+            pass
+        else: #is a file or a dir
+            #parse the file/dir and split at the space
+            number, fileName = line.split(" ")
+            #check if string or int
+            if number == "dir":
+                pass
+            else:
+                for thing in currentDirectory:
+                    locationName + thing
+                if directoryList.get(locationName) != None:
+                    currentTotal = int(directoryList.get(locationName))
+                    currentTotal += int(number)
+                    directoryList.update({locationName: currentTotal})
+                else:
+                    directoryList.update({locationName: int(number)})
+    for key in directoryList:
+        if int(directoryList[key]) <= 100000:
+            totalSum += int(directoryList[key])    
+    return totalSum
 
 def part2(data):
     return None    
            
-part1(data)
+print(part1(data))
 #print(part2(data))
