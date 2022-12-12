@@ -1,6 +1,6 @@
 # input file
-data = open("Day7\Sample.txt").readlines()
-#data = open("Day7\Data.txt").readlines()
+#data = open("Day7\Sample.txt").readlines()
+data = open("Day7\Data.txt").readlines()
 data = [line.strip() for line in data]
 
 def commandCheck(line):
@@ -25,9 +25,8 @@ def commandCheck(line):
 
 def part1(data):
     currentDirectory = []
-    directoryList = {} #2D dict dir name and total sizes
+    directoryList = {}
     totalSum = int(0)
-    locationName = ""
 
     for line in data:
         currentCommand = commandCheck(line)        
@@ -41,7 +40,6 @@ def part1(data):
             currentDirectory.append(folder)
             #print(currentDirectory)
         elif currentCommand == "listAll":
-            #dont care
             pass
         else: #is a file or a dir
             #parse the file/dir and split at the space
@@ -50,14 +48,16 @@ def part1(data):
             if number == "dir":
                 pass
             else:
-                for thing in currentDirectory:
-                    locationName + thing
-                if directoryList.get(locationName) != None:
+                locationName = "/".join(currentDirectory)
+                #print("/".join(poop))
+                if directoryList.get(locationName) is not None:
                     currentTotal = int(directoryList.get(locationName))
                     currentTotal += int(number)
-                    directoryList.update({locationName: currentTotal})
+                    #directoryList.update({locationName: currentTotal})
+                    directoryList[locationName] = currentTotal
                 else:
-                    directoryList.update({locationName: int(number)})
+                    #directoryList.update({locationName: int(number)})
+                    directoryList[locationName] = int(number)
     for key in directoryList:
         if int(directoryList[key]) <= 100000:
             totalSum += int(directoryList[key])    

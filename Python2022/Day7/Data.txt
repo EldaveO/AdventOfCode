@@ -497,7 +497,7 @@ $ ls
 $ cd ..
 $ cd jncrbhc
 $ ls
-205345 mrqgpv.gsm
+205345 mrqgpv.gsmls
 244683 nqpcpt
 $ cd ..
 $ cd mzzpfnr
