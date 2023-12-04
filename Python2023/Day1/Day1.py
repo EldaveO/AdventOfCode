@@ -15,10 +15,9 @@ def part1(data):
 
 def part2(data):    
     for line in data:
-        
+        print("poop")
     return "done"
       
-
 #print(part1(data))
 print(part2(data))
 
