@@ -77,3 +77,4 @@ def part2(data):
 
 print('Success Part 1 total: ', part1(data))
 print('Success Part 2 total: ', part2(data))
+input()
