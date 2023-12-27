@@ -1,3 +1,4 @@
+import time
 # input file
 #data = open("Day4\Sample.txt").readlines()
 data = open("Day4\Data.txt").readlines()
@@ -43,5 +44,9 @@ def part2(data):
                     x += 1
             i += 1     
     return sum(cardCopies)        
+
+start = time.time()
 print("Part 1: ", part1(data))
 print("Part 2: ", part2(data))
+end = time.time()
+print("This took: ", (end - start), " seconds to run!")
